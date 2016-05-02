@@ -1,0 +1,2 @@
+# MySnippets
+Collection of Snippets
