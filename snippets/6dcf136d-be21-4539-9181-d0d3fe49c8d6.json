@@ -1,0 +1,15 @@
+{
+  "uuid": "6dcf136d-be21-4539-9181-d0d3fe49c8d6",
+  "name": "MyTest",
+  "description": "MyTest",
+  "extraSearchTerms": [
+    "MyTest"
+  ],
+  "tags": [],
+  "code": "mytest",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php"
+  ],
+  "dependencies": []
+}
