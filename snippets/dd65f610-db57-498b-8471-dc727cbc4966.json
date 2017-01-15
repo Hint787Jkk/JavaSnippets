@@ -1,0 +1,17 @@
+{
+  "uuid": "dd65f610-db57-498b-8471-dc727cbc4966",
+  "name": "Test",
+  "description": "was zu tun ist",
+  "extraSearchTerms": [
+    "wasili"
+  ],
+  "tags": [
+    "javascript"
+  ],
+  "code": "sonst was",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php"
+  ],
+  "dependencies": []
+}
