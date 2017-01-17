@@ -1,0 +1,17 @@
+{
+  "uuid": "63f88201-60f4-4c5c-9124-356050fe8593",
+  "name": "downloadFile",
+  "description": "download file via javascript in download folder",
+  "extraSearchTerms": [],
+  "tags": [
+    "js"
+  ],
+  "code": "\u003cscript type\u003d\"text/javascript\"\u003e\r\n//Download a file form a url.\r\nfunction saveFile(url) {\r\n  // Get file name from url.\r\n  var filename \u003d url.substring(url.lastIndexOf(\"/\") + 1).split(\"?\")[0];\r\n  var xhr \u003d new XMLHttpRequest();\r\n  xhr.responseType \u003d \u0027blob\u0027;\r\n  xhr.onload \u003d function() {\r\n    var a \u003d document.createElement(\u0027a\u0027);\r\n    a.href \u003d window.URL.createObjectURL(xhr.response); // xhr.response is a blob\r\n    a.download \u003d filename; // Set the file name.\r\n    a.style.display \u003d \u0027none\u0027;\r\n    document.body.appendChild(a);\r\n    a.click();\r\n    delete a;\r\n  };\r\n  xhr.open(\u0027GET\u0027, url);\r\n  xhr.send();\r\n}\r\nsaveFile(\"url/test.html\");\r\n    \u003c/script\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php",
+    ".js",
+    ".html"
+  ],
+  "dependencies": []
+}
