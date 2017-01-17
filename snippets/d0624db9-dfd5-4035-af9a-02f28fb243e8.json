@@ -1,0 +1,15 @@
+{
+  "uuid": "d0624db9-dfd5-4035-af9a-02f28fb243e8",
+  "name": "readCSV",
+  "description": "read csv file",
+  "extraSearchTerms": [
+    "readCSV"
+  ],
+  "tags": [],
+  "code": "\u003c?php\r\ninclude \u0027inc/dbtchibo_connect.inc\u0027;\r\n\u003c?php\r\ninclude \u0027inc/dbtchibo_connect.inc\u0027;\r\n\r\n$$files \u003d \u0027import.csv\u0027;\r\n\r\n$$sql \u003d \"INSERT INTO tblTest(IDLOG,IDPerson,Zeitpunkt,Tabelle, Spalte,Referenz,Alt,Neu) VALUES (\";\r\nif (($$handle \u003d fopen ( $$files, \"r\" )) !\u003d\u003d FALSE) {\r\n\t\r\n\t$$i \u003d 1;\r\n\twhile ( ! feof ( $$handle ) ) {\r\n\t\t\r\n\t\t$$data \u003d fgets ( $$handle );\r\n\t\t$$data \u003d str_replace ( chr ( 10 ), \"\", $$data );\r\n\t\t$$data \u003d str_replace ( chr ( 13 ), \"\", $$data );\r\n\t\tif (strlen ( $$data ) \u003e 0) {\r\n\t\t\t\r\n\t\t\tif ($$i \u003e 1)\r\n\t\t\t\t$$sql .\u003d \",(\";\r\n\t\t\t$$splitted_data \u003d explode ( \"|\", $$data );\r\n\t\t\t\r\n\t\t\t// var_dump($$splitted_data);exit;\r\n\t\t\t\r\n\t\t\t$$num \u003d count ( $$splitted_data );\r\n\t\t\t\r\n\t\t\t$$sql .\u003d \"{$$splitted_data[0]} ,  {$$splitted_data[1]} ,    {$$splitted_data[2]} , {$$splitted_data[3]} ,  {$$splitted_data[4]} , \r\n\t\t{$$splitted_data[5]} ,   {$$splitted_data[6]} , {$$splitted_data[7]} )\";\r\n\t\t} // ist die Länge der Zeile !\u003d0 ?\r\n\t\t$$i ++;\r\n\t} // Schleife über Datesätze einer Datei\r\n} // konnte Datei öffnen??\r\n\r\n$$result \u003d mysql_query ( $$sql );\r\nif ($$result)\r\n\techo \"Datensätze importiert!\";\r\nelse\r\n\techo \"keine Datensätze importiert!\" . $$sql;\r\n\t\r\n\t// unlink ( $$files [$$m] );\r\nfclose ( $$handle );\r\n\r\n?\u003e\r\n${cursor}\r\n",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php"
+  ],
+  "dependencies": []
+}

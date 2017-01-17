@@ -1,0 +1,15 @@
+{
+  "uuid": "83bd7a6f-cdd3-4e2e-9c49-c68150c16f77",
+  "name": "keyPressAction",
+  "description": "when key is pressed javaScript",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "document.getElementById(\u0027inputPassword\u0027).onkeypress \u003d function (e) {\r\n\tif (e.which \u003d\u003d\u003d 13){\r\n\t\tdocument.getElementById(\u0027login\u0027).click(); \r\n\t}\r\n}",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".js",
+    ".php",
+    ".html"
+  ],
+  "dependencies": []
+}

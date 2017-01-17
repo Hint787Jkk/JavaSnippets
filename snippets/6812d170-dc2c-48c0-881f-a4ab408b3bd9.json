@@ -1,0 +1,17 @@
+{
+  "uuid": "6812d170-dc2c-48c0-881f-a4ab408b3bd9",
+  "name": "width and height of screen",
+  "description": "get width and height",
+  "extraSearchTerms": [],
+  "tags": [
+    "js"
+  ],
+  "code": "\u003cscript type\u003d\"text/javascript\"\u003e\r\n\talert(\"Weite:\"+$$(window).width()+\" Höhe:\"+$$( window ).height());\r\n\talert(window.innerWidth);\r\n\talert(document.documentElement.clientWidth);\r\n\talert(screen.width);\r\n\u003c/script\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".js",
+    ".html",
+    ".php"
+  ],
+  "dependencies": []
+}

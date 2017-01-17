@@ -1,11 +1,13 @@
 {
   "uuid": "3a0c4a4d-a03c-4eb1-abff-5be57a1991fe",
   "name": "debugAlert",
-  "description": "",
+  "description": "wild",
   "extraSearchTerms": [
     "debugAlert"
   ],
-  "tags": [],
+  "tags": [
+    "php"
+  ],
   "code": "echo \"\u003cscript\u003ealert(\u0027Debug Info: \".${cursor}.\"\u0027)\u003c/script\u003e\";\r\n",
   "location": "GENERIC_FILE",
   "filenameRestrictions": [
