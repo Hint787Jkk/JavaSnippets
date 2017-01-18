@@ -1,0 +1,15 @@
+{
+  "uuid": "eb1a4762-7145-4406-aeec-5bb7473a453d",
+  "name": "timestamp",
+  "description": "timestamp ",
+  "extraSearchTerms": [],
+  "tags": [
+    "php"
+  ],
+  "code": "date ( \"Y-m-d/H:i:s\" )",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php"
+  ],
+  "dependencies": []
+}

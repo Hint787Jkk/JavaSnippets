@@ -1,0 +1,17 @@
+{
+  "uuid": "d54dc384-df2b-4c90-b917-6d585eef6594",
+  "name": "hostName",
+  "description": "hostName",
+  "extraSearchTerms": [],
+  "tags": [
+    "js"
+  ],
+  "code": "",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".js",
+    ".php",
+    ".html"
+  ],
+  "dependencies": []
+}
