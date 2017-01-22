@@ -1,0 +1,15 @@
+{
+  "uuid": "85554595-47a1-4781-9040-c7d885a2281b",
+  "name": "validated date",
+  "description": "validates date",
+  "extraSearchTerms": [],
+  "tags": [
+    "php"
+  ],
+  "code": "function validateDate($$date, $$format \u003d \u0027d.m.Y\u0027) {\r\n\t\t$$d \u003d DateTime::createFromFormat ( $$format, $$date );\r\n\t\treturn $$d \u0026\u0026 $$d-\u003eformat ( $$format ) \u003d\u003d $$date;\r\n\t}",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php"
+  ],
+  "dependencies": []
+}
