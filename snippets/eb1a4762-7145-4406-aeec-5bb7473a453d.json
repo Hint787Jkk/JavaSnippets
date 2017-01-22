@@ -6,7 +6,7 @@
   "tags": [
     "php"
   ],
-  "code": "date ( \"Y-m-d/H:i:s\" )",
+  "code": "// hier ohne Microsekunden\r\n$$time1\u003ddate ( \"Y-m-d/H:i:s\" );\r\n\r\n// hier mit Microsekunden\r\n$$now \u003d DateTime::createFromFormat ( \u0027U.u\u0027, microtime ( true ) );\r\n$$timestamp \u003d $$now-\u003eformat ( \"mdYHisu\" );",
   "location": "GENERIC_FILE",
   "filenameRestrictions": [
     ".php"
