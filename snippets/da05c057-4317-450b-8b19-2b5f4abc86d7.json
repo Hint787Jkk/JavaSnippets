@@ -1,0 +1,15 @@
+{
+  "uuid": "da05c057-4317-450b-8b19-2b5f4abc86d7",
+  "name": "dateDiff",
+  "description": "dateDifference",
+  "extraSearchTerms": [],
+  "tags": [
+    "php"
+  ],
+  "code": "\r\n$$datetime1 \u003d new DateTime(\u002711.10.2009\u0027);\r\n$$datetime2 \u003d new DateTime(\u00279.10.2009\u0027);\r\n\r\n$$interval \u003d $$datetime1-\u003ediff($$datetime2);\r\n\r\necho $$interval-\u003eformat(\u0027%R%a\u0027);\r\n${cursor}\r\n",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php"
+  ],
+  "dependencies": []
+}
