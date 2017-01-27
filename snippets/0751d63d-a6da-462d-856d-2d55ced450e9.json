@@ -1,0 +1,17 @@
+{
+  "uuid": "0751d63d-a6da-462d-856d-2d55ced450e9",
+  "name": "removeHover",
+  "description": "remove hover effects",
+  "extraSearchTerms": [],
+  "tags": [
+    "css"
+  ],
+  "code": " style\u003d\u0027 pointer-events: none;\u0027",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".css",
+    ".html",
+    ".php"
+  ],
+  "dependencies": []
+}
