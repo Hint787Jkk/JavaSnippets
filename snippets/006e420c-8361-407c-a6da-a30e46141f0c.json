@@ -1,0 +1,15 @@
+{
+  "uuid": "006e420c-8361-407c-a6da-a30e46141f0c",
+  "name": "phpOutputCaseBesed",
+  "description": "alternative zu echo effizienter ",
+  "extraSearchTerms": [],
+  "tags": [
+    "php"
+  ],
+  "code": "\u003c?php\r\ninclude_once \u0027includes/db_connect.php\u0027;\r\ninclude_once \u0027includes/functions.php\u0027;\r\n \r\nsec_session_start();\r\n?\u003e\r\n\u003c!DOCTYPE html\u003e\r\n\u003chtml\u003e\r\n    \u003chead\u003e\r\n        \u003cmeta charset\u003d\"UTF-8\"\u003e\r\n        \u003ctitle\u003eSecure Login: Protected Page\u003c/title\u003e\r\n        \u003clink rel\u003d\"stylesheet\" href\u003d\"styles/main.css\" /\u003e\r\n    \u003c/head\u003e\r\n    \u003cbody\u003e\r\n        \u003c?php if (login_check($$mysqli) \u003d\u003d true) : ?\u003e\r\n            \u003cp\u003eWelcome \u003c?php echo htmlentities($$_SESSION[\u0027username\u0027]); ?\u003e!\u003c/p\u003e\r\n            \u003cp\u003e\r\n                This is an example protected page.  To access this page, users\r\n                must be logged in.  At some stage, we\u0027ll also check the role of\r\n                the user, so pages will be able to determine the type of user\r\n                authorised to access the page.\r\n            \u003c/p\u003e\r\n            \u003cp\u003eReturn to \u003ca href\u003d\"index.php\"\u003elogin page\u003c/a\u003e\u003c/p\u003e\r\n        \u003c?php else : ?\u003e\r\n            \u003cp\u003e\r\n                \u003cspan class\u003d\"error\"\u003eYou are not authorized to access this page.\u003c/span\u003e Please \u003ca href\u003d\"index.php\"\u003elogin\u003c/a\u003e.\r\n            \u003c/p\u003e\r\n        \u003c?php endif; ?\u003e\r\n    \u003c/body\u003e\r\n\u003c/html\u003e",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php"
+  ],
+  "dependencies": []
+}
