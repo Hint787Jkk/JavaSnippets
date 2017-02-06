@@ -1,0 +1,14 @@
+{
+  "uuid": "fbc45273-46c2-470a-a488-89ce2f341348",
+  "name": "nextLine",
+  "description": "nextLine im Title Tag ",
+  "extraSearchTerms": [],
+  "tags": [],
+  "code": "\u0026#13",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php",
+    ".html"
+  ],
+  "dependencies": []
+}
