@@ -11,7 +11,8 @@
   "filenameRestrictions": [
     ".css",
     ".html",
-    ".php"
+    ".php",
+    ".js"
   ],
   "dependencies": []
 }

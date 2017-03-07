@@ -1,0 +1,15 @@
+{
+  "uuid": "fb600e39-6027-41e2-aee6-21e89e5c9e8c",
+  "name": "bins_parm dynamicly",
+  "description": "bind parms dynamicly depending on user input",
+  "extraSearchTerms": [],
+  "tags": [
+    "php"
+  ],
+  "code": "//connect\r\n$$mysqli \u003d new mysqli($$host, $$user, $$password, $$db_name);\r\n\r\n//prepare\r\n$$stmt \u003d $$mysqli-\u003eprepare(\"SELECT * FROM the_table WHERE field1\u003d ? AND Field2\u003d ?\");\r\n\r\n//Binding parameters. Types: s \u003d string, i \u003d integer, d \u003d double,  b \u003d blob\r\n$$params\u003d array(\"ss\",\"string_1\",\"string_2\");\r\n\r\n//now we need to add references\r\n$$tmp \u003d array();\r\nforeach($$params as $$key \u003d\u003e $$value) $$tmp[$$key] \u003d \u0026$$params[$$key];\r\n// now us the new array\r\ncall_user_func_array(array($$stmt, \u0027bind_param\u0027), $$tmp);\r\n\r\n$$stmt-\u003eexecute();\r\n\r\n/* Fetch result to array */\r\n$$res \u003d $$stmt-\u003eget_result();\r\nwhile($$row \u003d $$res-\u003efetch_array(MYSQLI_ASSOC)) {\r\n  $$a_data[]\u003d$$row;\r\n}\r\nprint_r($$a_data);\r\n\r\n$$stmt-\u003eclose();",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php"
+  ],
+  "dependencies": []
+}

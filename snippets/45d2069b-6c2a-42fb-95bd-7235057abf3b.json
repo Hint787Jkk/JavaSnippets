@@ -1,0 +1,15 @@
+{
+  "uuid": "45d2069b-6c2a-42fb-95bd-7235057abf3b",
+  "name": "dowload file",
+  "description": "dowload file",
+  "extraSearchTerms": [],
+  "tags": [
+    "php"
+  ],
+  "code": "\t// PDF is located at $$_FILES[\u0027data\u0027][\u0027tmp_name\u0027]\r\n\t// rename(...) it or send via email etc.\r\n\t \t\r\n\t$$pdfBarcodeLabelFile\u003dfile_get_contents ($$_POST[\u0027pdf\u0027] );\r\n\t$$fileOutput\u003d$$file.pdf\";\r\n\t\r\n\techo $$fileOutput;",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php"
+  ],
+  "dependencies": []
+}

@@ -3,7 +3,9 @@
   "name": "nextLine",
   "description": "nextLine im Title Tag ",
   "extraSearchTerms": [],
-  "tags": [],
+  "tags": [
+    "html"
+  ],
   "code": "\u0026#13",
   "location": "GENERIC_FILE",
   "filenameRestrictions": [

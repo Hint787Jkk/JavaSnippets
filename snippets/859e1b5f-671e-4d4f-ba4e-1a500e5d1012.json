@@ -1,0 +1,15 @@
+{
+  "uuid": "859e1b5f-671e-4d4f-ba4e-1a500e5d1012",
+  "name": "fileWrite",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [
+    "php"
+  ],
+  "code": "file_put_contents(\"test.txt\",\"was geth\".$$wert);",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php"
+  ],
+  "dependencies": []
+}

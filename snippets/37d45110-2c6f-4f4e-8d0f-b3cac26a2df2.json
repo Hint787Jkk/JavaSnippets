@@ -1,0 +1,15 @@
+{
+  "uuid": "37d45110-2c6f-4f4e-8d0f-b3cac26a2df2",
+  "name": "change user password ",
+  "description": "change user password",
+  "extraSearchTerms": [],
+  "tags": [
+    "sql"
+  ],
+  "code": "SET PASSWORD FOR \u0027user\u0027 \u003d PASSWORD(\u0027newPassword\u0027)",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".sql"
+  ],
+  "dependencies": []
+}
