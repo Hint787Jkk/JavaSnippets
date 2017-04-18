@@ -1,0 +1,16 @@
+{
+  "uuid": "d0176afe-5309-496d-b91d-b1e97375644d",
+  "name": "iframes connect",
+  "description": "connects  iframes",
+  "extraSearchTerms": [],
+  "tags": [
+    "js"
+  ],
+  "code": "",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".js",
+    ".php"
+  ],
+  "dependencies": []
+}
