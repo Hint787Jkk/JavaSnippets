@@ -6,7 +6,7 @@
   "tags": [
     "js"
   ],
-  "code": "",
+  "code": "\r\n\u003ciframe name\u003d\"left\" src\u003d\"inventar_einlagern_.php\" frameborder\u003d\"0\" height\u003d\"100%\" width\u003d\"100%\"\r\n\tSCROLLING\u003d\"NO\"\u003e \u003c/iframe\u003e\r\n\r\n\u003ciframe name\u003d\"left\" src\u003d\"upload/\" frameborder\u003d\"0\" height\u003d\"100%\" width\u003d\"100%\" SCROLLING\u003d\"no\" id\u003d\"iframe_upload\"\r\n\tstyle\u003d\"margin-top: -121px\" /\u003e\u003c/iframe\u003e\r\n",
   "location": "GENERIC_FILE",
   "filenameRestrictions": [
     ".js",
