@@ -1,0 +1,16 @@
+{
+  "uuid": "aba04ee2-1717-45a1-bb7a-0ce9c58517bb",
+  "name": "iframes communicate",
+  "description": "",
+  "extraSearchTerms": [],
+  "tags": [
+    "js"
+  ],
+  "code": "\tfunction closeTab() {\r\n\t\t\twindow.close();\r\n\t\t}\r\n\r\n\t\tsetSelectedEvents();\r\n\r\n\r\n\t\tdocument.getElementById(\u0027sammlungskennzeichen\u0027).onchange \u003d function() {\r\n\r\n\t\t\t\r\n\t\t\ttop.document.getElementById(\u0027iframe_upload\u0027).contentWindow.\r\n\t\t    document.getElementById(\u0027sammKennz\u0027).value\u003d$$(\"#sammlungskennzeichen option[value\u003d\u0027\"+this.value+\"\u0027]\").text();\r\n\t\t    \r\n\t\t\t\t\t\t\r\n\t\t}",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".js",
+    ".php"
+  ],
+  "dependencies": []
+}
