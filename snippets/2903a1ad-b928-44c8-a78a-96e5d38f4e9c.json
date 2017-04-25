@@ -1,0 +1,15 @@
+{
+  "uuid": "2903a1ad-b928-44c8-a78a-96e5d38f4e9c",
+  "name": "print_r formated array",
+  "description": "sorts print out formated array",
+  "extraSearchTerms": [],
+  "tags": [
+    "php"
+  ],
+  "code": "echo \"\u003cpre\u003e\";\r\nprint_r($$_POST [\u0027datei\u0027] );\r\necho \"\u003c/pre\u003e\";",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php"
+  ],
+  "dependencies": []
+}
