@@ -1,0 +1,15 @@
+{
+  "uuid": "05a4cd27-e607-4dfd-ac8c-fa96de4cec6b",
+  "name": "deleteEmptyArrayElements",
+  "description": "delete Empty Array Elements",
+  "extraSearchTerms": [],
+  "tags": [
+    "php"
+  ],
+  "code": "function deleteEmptyArrayElements($$array){\r\n\t\r\n\t$$filteredArray\u003d$$array;\r\n\tfor ($$i \u003d 0; $$i \u003c count($$filteredArray); $$i++) {\r\n\t\tif (empty($$filteredArray[$$i]))\r\n\t\t\tunset($$filteredArray[$$i]);\r\n\t}\r\n\t\r\n\treturn $$filteredArray;\r\n}",
+  "location": "GENERIC_FILE",
+  "filenameRestrictions": [
+    ".php"
+  ],
+  "dependencies": []
+}
